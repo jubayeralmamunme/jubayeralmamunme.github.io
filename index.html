@@ -3,37 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jubayer Al Mamun | Mechanical Engineer</title>
 
 <style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f6f8;
     color: #222;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
     background: #172033;
     color: white;
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 header h1 {
-    font-size: 42px;
+    font-size: 44px;
     margin: 0 0 10px;
 }
 
 header p {
-    font-size: 19px;
+    font-size: 20px;
     margin: 0;
 }
 
+/* Navigation */
 nav {
     background: white;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 nav a {
@@ -43,38 +56,136 @@ nav a {
     font-weight: bold;
 }
 
+/* Sections */
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding: 45px 20px;
+    padding: 55px 20px;
 }
 
 h2 {
     color: #172033;
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-left: 5px solid #172033;
+    padding-left: 12px;
 }
 
+/* Cards */
 .card {
     background: white;
     padding: 25px;
-    margin-top: 15px;
-    border-radius: 10px;
+    margin-top: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
 }
 
+.card h3 {
+    margin-top: 0;
+    color: #172033;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Certificate */
+.certificate-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.certificate-card h3 {
+    font-size: 17px;
+    color: #172033;
+    word-break: break-word;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #172033;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.view-btn:hover {
+    opacity: 0.85;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #172033;
+    color: white;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Contact */
+.contact a {
+    color: #172033;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     background: #172033;
     color: white;
     text-align: center;
     padding: 25px;
+    margin-top: 30px;
 }
 
-@media (max-width: 600px) {
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
     header h1 {
         font-size: 32px;
     }
 
+    header p {
+        font-size: 17px;
+    }
+
     nav a {
         display: inline-block;
-        margin: 6px;
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -83,112 +194,467 @@ footer {
 <body>
 
 <header>
-<h1>Jubayer Al Mamun</h1>
-<p>Mechanical Engineer | Production | Project & Maintenance</p>
+    <h1>Jubayer Al Mamun</h1>
+    <p>Mechanical Engineer | Production | Project & Maintenance</p>
 </header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
 </nav>
 
+
+<!-- ABOUT -->
 <section id="about">
+
 <h2>About Me</h2>
+
 <div class="card">
+
 <p>
 I am a Mechanical Engineer with experience in production,
-maintenance, project execution, installation, commissioning
-and team management.
+mechanical maintenance, project execution, installation,
+commissioning, troubleshooting and team management.
 </p>
+
+<p>
+Experienced in industrial manufacturing environments with
+a strong focus on production efficiency, quality, safety,
+continuous improvement and operational excellence.
+</p>
+
 </div>
+
 </section>
 
+
+<!-- EXPERIENCE -->
 <section id="experience">
+
 <h2>Professional Experience</h2>
 
 <div class="card">
-<h3>Shift Incharge - Production</h3>
-<p>TCPL | Bogura, Bangladesh</p>
+
+<h3>Shift Incharge (Executive) - Production</h3>
+
+<p><strong>PepsiCo - Transcom Consumer Products Ltd. (TCPL)</strong></p>
+
 <p>
-Managing shift production, manpower, production targets,
-downtime, quality, safety, GMP, HACCP and 5S compliance.
+Leading shift-wise manufacturing operations to achieve daily
+production targets. Monitoring production, manpower, downtime,
+quality and safety while coordinating with Maintenance, QA and
+Planning teams.
 </p>
+
+<p>
+Ensuring GMP, HACCP and 5S compliance and supporting continuous
+improvement and loss reduction.
+</p>
+
 </div>
+
 
 <div class="card">
+
 <h3>Executive Engineer</h3>
-<p>Eminent Engineering</p>
+
+<p><strong>Eminent Engineering</strong></p>
+
 <p>
-Worked on engineering projects, installation,
-commissioning, maintenance and project coordination.
+Supervised mechanical erection, installation, commissioning,
+maintenance and engineering project activities.
 </p>
+
 </div>
+
+
+<div class="card">
+
+<h3>Mechanical Engineer</h3>
+
+<p><strong>PepsiCo</strong></p>
+
+<p>
+Worked on installation, erection and commissioning of
+industrial machinery and production equipment.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Sub Assistant Engineer</h3>
+
+<p><strong>AKIJ FOOD & BEVARAGE LIMITED (AFBL)</strong></p>
+
+<p>
+Coordinated technical maintenance activities and worked with
+department heads to ensure effective plant operation.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Sub Assistant Engineer</h3>
+
+<p><strong>Young Optics, Inc.</strong></p>
+
+<p>
+Conducted pilot runs and supported production activities for
+new lens models.
+</p>
+
+</div>
+
 </section>
 
+
+<!-- PROJECTS -->
 <section id="projects">
+
 <h2>Projects</h2>
+
+<div class="grid">
 
 <div class="card">
 <h3>PepsiCo Bogura Plant - PC Inspira Installation</h3>
-<p>Installation and project execution related to Lays production line.</p>
+<p>
+Installation and project execution related to the Lays
+production line.
+</p>
 </div>
 
 <div class="card">
 <h3>PC 10 Phase 2 Project</h3>
-<p>Mechanical project support, installation and commissioning activities.</p>
+<p>
+Mechanical project support, installation and commissioning
+activities.
+</p>
 </div>
 
 <div class="card">
 <h3>TCPL Packaging Platform Relocation</h3>
-<p>Packaging platform relocation including weigher, bag maker, printer and metal detector.</p>
+<p>
+Packaging platform relocation including weigher, bag maker,
+printer and metal detector.
+</p>
 </div>
+
+</div>
+
 </section>
 
+
+<!-- SKILLS -->
 <section id="skills">
+
 <h2>Technical Skills</h2>
 
 <div class="card">
-<p>Production Management</p>
-<p>Mechanical Maintenance</p>
-<p>Project Management</p>
-<p>Installation & Commissioning</p>
-<p>Team Management</p>
-<p>AutoCAD</p>
-<p>SolidWorks</p>
-<p>GMP, HACCP & 5S</p>
+
+<div class="skill-list">
+
+<span class="skill">Production Management</span>
+<span class="skill">Mechanical Maintenance</span>
+<span class="skill">Project Management</span>
+<span class="skill">Installation & Commissioning</span>
+<span class="skill">Industrial Machinery</span>
+<span class="skill">Troubleshooting</span>
+<span class="skill">Team Leadership</span>
+<span class="skill">AutoCAD</span>
+<span class="skill">SolidWorks</span>
+<span class="skill">GMP</span>
+<span class="skill">HACCP</span>
+<span class="skill">5S</span>
+<span class="skill">Safety</span>
+<span class="skill">Continuous Improvement</span>
+
 </div>
+
+</div>
+
 </section>
 
+
+<!-- EDUCATION -->
 <section id="education">
+
 <h2>Education</h2>
 
 <div class="card">
+
 <h3>BSc in Mechanical Engineering</h3>
 <p>World University of Bangladesh</p>
+<p>Jun 2024 - Present</p>
+
 </div>
 
+
 <div class="card">
+
+<h3>Associate Membership of IEB (AMIE)</h3>
+<p>The Institution of Engineers, Bangladesh</p>
+
+</div>
+
+
+<div class="card">
+
 <h3>Diploma in Mechanical Engineering</h3>
 <p>Rajshahi Government Polytechnic Institute</p>
-</div>
-</section>
+<p>CGPA: 3.51 / 4.00</p>
 
-<section id="contact">
-<h2>Contact</h2>
+</div>
+
 
 <div class="card">
-<p>Email: Your Email</p>
-<p>LinkedIn: Your LinkedIn Profile</p>
-<p>GitHub: jubayeralmamunme</p>
+
+<h3>SSC</h3>
+<p>Armed Police Battalion Public School & College, Bogura</p>
+<p>GPA: 5.00 / 5.00</p>
+
 </div>
+
 </section>
 
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+
+<h2>Certificates & Training</h2>
+
+<div class="grid">
+
+
+<div class="certificate-card">
+<h3>Lean Six Sigma Certificate</h3>
+<a class="view-btn"
+href="certificates/lean%20six%20sigma%20certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Excel Formula</h3>
+<a class="view-btn"
+href="certificates/Excel%20formula.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Six Sigma White Belt Certification</h3>
+<a class="view-btn"
+href="certificates/Official%20Certification_Issued_Six_Sigma_White_Belt_Certification.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Microsoft Excel</h3>
+<a class="view-btn"
+href="certificates/Microsoft%20excle.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Engineering Management</h3>
+<a class="view-btn"
+href="certificates/Engineering%20Management.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Occupational Safety</h3>
+<a class="view-btn"
+href="certificates/Occupational%20safety.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Operations and Project Management</h3>
+<a class="view-btn"
+href="certificates/Operation%20and%20project%20management.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>SolidWorks Essentials for Complete Beginners</h3>
+<a class="view-btn"
+href="certificates/Jubayer%20Al_mamun_solidworks_essentials_for_complete_beginners_certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>AutoCAD Essentials for Complete Beginners</h3>
+<a class="view-btn"
+href="certificates/Jubayer%20Al_mamun_autocad_essentials_course_for_complete_beginners_certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Do Food Safely Certificate</h3>
+<a class="view-btn"
+href="certificates/dofoodsafely%20certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Beamex Temperature Calibration</h3>
+<a class="view-btn"
+href="certificates/Beamex%20temperature%20Certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Professional Diploma in Leadership</h3>
+<a class="view-btn"
+href="certificates/Professional%20Diploma%20in%20leadership.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>EF SET English Certificate</h3>
+<a class="view-btn"
+href="certificates/EF%20SET%20Certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Beamex Pressure Calibration</h3>
+<a class="view-btn"
+href="certificates/Beamex%20Pressure%20Calibration%20Certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Microsoft Project</h3>
+<a class="view-btn"
+href="certificates/Microsoft%20Project%20certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Leadership for Successful Project Management</h3>
+<a class="view-btn"
+href="certificates/Leadership%20for%20successful%20project%20management.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>British Council EnglishScore</h3>
+<a class="view-btn"
+href="certificates/British%20council%20English%20score.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+<div class="certificate-card">
+<h3>Leadership and Followership</h3>
+<a class="view-btn"
+href="certificates/Leadership%20and%20followership%20certificate.pdf"
+target="_blank">
+View Certificate
+</a>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card contact">
+
+<p>
+<strong>Email:</strong> Your Email
+</p>
+
+<p>
+<strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/jubayer-al-mamun/"
+target="_blank">
+LinkedIn Profile
+</a>
+</p>
+
+<p>
+<strong>GitHub:</strong>
+<a href="https://github.com/jubayeralmamunme"
+target="_blank">
+github.com/jubayeralmamunme
+</a>
+</p>
+
+</div>
+
+</section>
+
+
 <footer>
-<p>© 2026 Jubayer Al Mamun</p>
+
+<p>© 2026 Jubayer Al Mamun | Mechanical Engineer</p>
+
 </footer>
 
 </body>
